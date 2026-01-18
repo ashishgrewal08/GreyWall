@@ -35,11 +35,7 @@ router.route("/")
     isOwner,
     wrapAsync(listingController.destroyListing));
 
-    router.get("/health", (req, res) => {
-  res.status(200).send("OK");
-});
-
-module.exports = router;
+    
 
 //Edit route
 router.get(
